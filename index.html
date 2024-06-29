@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+A recreation of
+Piet Mondrian’s Composition No. III, with Red, Blue, Yellow, and Black (1929)
+using only HTML and CSS, based on the CSS Grid system.
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Mondrian Art</title>
+  <style>
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #red {
+      background-color: #E72F24;
+    }
+
+    #blue {
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+
+    #yellow {
+      background-color: #F9D01E;
+    }
+
+    #gray {
+      background-color: #232629;
+    }
+
+    #container {
+      width: 748px;
+      height: 748px;
+      background-color: #000;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;   
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+    }
+
+    .bg {
+      background-color: #F0F1EC;
+    }
+
+    #bg-after-red {
+      grid-column: span 3;
+    }
+
+    #bg-below-red {
+      grid-row: span 2;
+    }
+
+    #bg-diag-red {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    #bg-under-blue {
+      grid-row: span 2;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div id="container">
+    <div id="red"></div>
+    <div class="bg" id="bg-after-red"></div>
+    <div class="bg" id="bg-below-red"></div>
+    <div class="bg" id="bg-diag-red"></div>
+    <div id="blue"></div>
+    <div class="bg" id="bg-under-blue"></div>
+    <div class="bg"></div>
+    <div id="yellow"></div>
+    <div id="gray"></div>
+  </div>
+</body>
+
+</html>
