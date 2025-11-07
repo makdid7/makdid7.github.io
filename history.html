@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Maksim Didenko — Wallet</title>
+
+        <!-- CSS FILES -->      
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/apexcharts.css" rel="stylesheet">
+
+        <link href="css/tooplate-mini-finance.css" rel="stylesheet">
+<!--
+
+Tooplate 2135 Mini Finance
+
+https://www.tooplate.com/view/2135-mini-finance
+
+Bootstrap 5 Dashboard Admin Template
+
+-->
+    </head>
+    
+    <body>
+        <header class="navbar sticky-top flex-md-nowrap">
+            <div class="col-md-3 col-lg-3 me-0 px-3 fs-6">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi-box"></i>
+                    Maksim Didenko
+                </a>
+            </div>
+
+            <button class="navbar-toggler position-absolute collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            
+
+            <div class="d-flex align-items-center gap-3 me-auto ms-3">
+                <span class="text-muted small">Let’s connect and build something cool:</span>
+                <a href="https://github.com/makdid7" target="_blank" rel="noopener" class="small">GitHub</a>
+                <a href="https://linkedin.com/in/maksim-didenko" target="_blank" rel="noopener" class="small">LinkedIn</a>
+                <a href="mailto:maksim.dnko@gmail.com" class="small">Email</a>
+            </div>
+
+            <div class="navbar-nav me-lg-2">
+                <div class="nav-item text-nowrap d-flex align-items-center">
+                </div>
+            </div>
+
+            <div class="dropdown px-3">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="images/selfies/Headshot_small.png" class="profile-image img-fluid" alt="Maksim Didenko">
+                </a>
+                <ul class="dropdown-menu bg-white shadow">
+                    <li>
+                        <div class="dropdown-menu-profile-thumb d-flex">
+                            <img src="images/selfies/Headshot_small.png" class="profile-image img-fluid me-3" alt="Maksim Didenko">
+
+                            <div class="d-flex flex-column">
+                                <small>Maksim Didenko</small>
+                                <a href="mailto:maksim.dnko@gmail.com">maksim.dnko@gmail.com</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    
+                                <div class="dropdown-menu-profile-thumb d-flex">
+                                    <img src="images/selfies/Headshot_small.png" class="profile-image img-fluid me-3" alt="Maksim Didenko">
+
+                                    <div class="d-flex flex-column">
+                                        <small>Maksim Didenko</small>
+                                        <a href="mailto:maksim.dnko@gmail.com">maksim.dnko@gmail.com</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            
+
+                            
+
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row">
+                <nav id="sidebarMenu" class="col-md-3 col-lg-3 sidebar collapse">
+                    <div class="position-sticky py-4 px-3 sidebar-sticky">
+                        <ul class="nav flex-column h-100">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">
+                                    <i class="bi-house-fill me-2"></i>
+                                    Overview
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="history.html">
+                                    <i class="bi-wallet me-2"></i>
+                                    History
+                                </a>
+                            </li>
+
+                            
+
+                            
+                        </ul>
+                    </div>
+                </nav>
+
+                <main class="main-wrapper col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start">
+                    <div class="title-group mb-3">
+                        <h1 class="h2 mb-0">Financial Advisory Services</h1>
+                    </div>
+
+                    <div class="row my-4">
+                        <div class="col-lg-12 col-12">
+                            <div class="custom-block bg-white">
+                                <h5 class="mb-4">Service Packages & Engagements</h5>
+
+                                <div class="table-responsive">
+                                    <table class="account-table table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Date</th>
+
+                                                <th scope="col">Time</th>
+
+                                                <th scope="col">Description</th>
+
+                                                <th scope="col">Payment Type</th>
+
+                                                <th scope="col">Amount</th>
+
+                                                <th scope="col">Balance</th>
+
+                                                <th scope="col">Status</th>
+
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">July 5, 2023</td>
+
+                                                <td scope="row">10:00 PM</td>
+
+                                                <td scope="row">Shopping</td>
+
+                                                <td scope="row">C2C Transfer</td>
+
+                                                <td class="text-danger" scope="row">
+                                                    <span class="me-1">-</span>
+                                                    $100.00
+                                                </td>
+
+                                                <td scope="row">$5,500.00</td>
+
+                                                <td scope="row">
+                                                    <span class="badge text-bg-danger">
+                                                        Pending
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">July 2, 2023</td>
+
+                                                <td scope="row">10:42 AM</td>
+
+                                                <td scope="row">Food Delivery</td>
+
+                                                <td scope="row">Mobile Reload</td>
+
+                                                <td class="text-success" scope="row">
+                                                    <span class="me-1">+</span>
+                                                    $250
+                                                </td>
+
+                                                <td scope="row">$5,600.00</td>
+
+                                                <td scope="row">
+                                                    <span class="badge text-bg-success">
+                                                        Success
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">June 28, 2023</td>
+
+                                                <td scope="row">8:20 PM</td>
+
+                                                <td scope="row">Billing</td>
+
+                                                <td scope="row">Goverment</td>
+
+                                                <td class="text-success" scope="row">
+                                                <span class="me-2">+</span>$50</td>
+
+                                                <td scope="row">$5,350.00</td>
+
+                                                <td scope="row">
+                                                    <span class="badge text-bg-success">
+                                                        Success
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">June 24, 2023</td>
+
+                                                <td scope="row">10:48 PM</td>
+
+                                                <td scope="row">Shopee</td>
+
+                                                <td scope="row">QR Code</td>
+
+                                                <td class="text-danger" scope="row">
+                                                <span class="me-2">-</span>$380</td>
+
+                                                <td scope="row">$5,300.00</td>
+
+                                                <td scope="row">
+                                                    <span class="badge text-bg-dark">
+                                                        Cancelled
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">June 12, 2023</td>
+
+                                                <td scope="row">12:30 AM</td>
+
+                                                <td scope="row">Food Delivery</td>
+
+                                                <td scope="row">Mobile Reload</td>
+
+                                                <td class="text-success" scope="row">
+                                                <span class="me-2">+</span>$250</td>
+
+                                                <td scope="row">$4,920.00</td>
+
+                                                <td scope="row">
+                                                    <span class="badge text-bg-success">
+                                                        Success
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">May 31, 2023</td>
+
+                                                <td scope="row">2:40 PM</td>
+
+                                                <td scope="row">Food Delivery</td>
+
+                                                <td scope="row">Mobile Reload</td>
+
+                                                <td class="text-success" scope="row">
+                                                <span class="me-2">+</span>$50</td>
+
+                                                <td scope="row">$4,920.00</td>
+
+                                                <td scope="row">
+                                                    <span class="badge text-bg-success">
+                                                        Success
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">May 22, 2023</td>
+
+                                                <td scope="row">8:50 AM</td>
+
+                                                <td scope="row">Food Delivery</td>
+
+                                                <td scope="row">Mobile Reload</td>
+
+                                                <td class="text-success" scope="row">
+                                                <span class="me-2">+</span>$50</td>
+
+                                                <td scope="row">$4,920.00</td>
+
+                                                <td scope="row">
+                                                    <span class="badge text-bg-success">
+                                                        Success
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">May 20, 2023</td>
+
+                                                <td scope="row">6:45 PM</td>
+
+                                                <td scope="row">Food Delivery</td>
+
+                                                <td scope="row">Mobile Reload</td>
+
+                                                <td class="text-danger" scope="row">
+                                                <span class="me-2">-</span>$500</td>
+
+                                                <td scope="row">$4,920.00</td>
+
+                                                <td scope="row">
+                                                    <span class="badge text-bg-danger">
+                                                        Pending
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">April 28, 2023</td>
+
+                                                <td scope="row">11:20 AM</td>
+
+                                                <td scope="row">Food Delivery</td>
+
+                                                <td scope="row">Mobile Reload</td>
+
+                                                <td class="text-success" scope="row">
+                                                <span class="me-2">+</span>$856</td>
+
+                                                <td scope="row">$4,920.00</td>
+
+                                                <td scope="row">
+                                                    <span class="badge text-bg-success">
+                                                        Success
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">April 16, 2023</td>
+
+                                                <td scope="row">11:00 PM</td>
+
+                                                <td scope="row">Food Delivery</td>
+
+                                                <td scope="row">Mobile Reload</td>
+
+                                                <td class="text-success" scope="row">
+                                                <span class="me-2">+</span>$50</td>
+
+                                                <td scope="row">$4,920.00</td>
+
+                                                <td scope="row">
+                                                    <span class="badge text-bg-danger">
+                                                        Pending
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <nav aria-label="Page navigation example">
+                                        <ul class="pagination justify-content-center mb-0">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">Prev</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="page-item active" aria-current="page">
+                                                <a class="page-link" href="#">1</a>
+                                            </li>
+                                            
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">2</a>
+                                            </li>
+                                            
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">3</a>
+                                            </li>
+
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">4</a>
+                                            </li>
+                                            
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">Next</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7 col-12">
+                            <div class="custom-block custom-block-balance">
+                                <small>Earnings Summary</small>
+
+                                <h2 class="mt-2 mb-3">Year-to-Date Earnings</h2>
+
+                                <div class="custom-block-numbers d-flex align-items-center">
+                                    <span>+372</span>
+                                    <span>5123</span>
+                                    <span>4567</span>
+                                </div>
+
+                                <div class="d-flex">
+                                    <div>
+                                        <small>Expert</small>
+                                        <p>Maksim Didenko</p>
+                                    </div>
+
+                                    <div class="ms-auto">
+                                        <small>Location</small>
+                                        <p>Estonia & International</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="col-lg-5 col-12">
+                            <div class="custom-block custom-block-transations">
+                                <h5 class="mb-4">Recent Insights</h5>
+
+                                <div class="d-flex flex-wrap align-items-center mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/selfies/At the hill.jpg" class="profile-image img-fluid" alt="Advisory note">
+
+                                        <div>
+                                            <p>Market Outlook — Q3</p>
+
+                                            <small class="text-muted">Strategy Brief</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="ms-auto">
+                                        <small>05/12/2023</small>
+                                        <strong class="d-block text-danger"><span class="me-1">-</span> $250</strong>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/selfies/At the waterfall.jpg" class="profile-image img-fluid" alt="Advisory note">
+
+                                        <div>
+                                            <p>Tax Optimization 2025</p>
+
+                                            <small class="text-muted">Guide</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="ms-auto">
+                                        <small>22/8/2023</small>
+                                        <strong class="d-block text-success"><span class="me-1">+</span> $280</strong>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/selfies/Headshot_small.png" class="profile-image img-fluid" alt="Advisory note">
+
+                                        <div>
+                                            <p>Wealth Structures</p>
+
+                                            <small class="text-muted">Case Study</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="ms-auto">
+                                        <small>22/8/2023</small>
+                                        <strong class="d-block text-success"><span class="me-1">+</span> $280</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <footer class="site-footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-12 d-flex flex-wrap justify-content-between align-items-center gap-2">
+                                    <p class="mb-0 small">Let’s connect: <a href="https://github.com/makdid7" target="_blank" rel="noopener">GitHub</a> · <a href="https://linkedin.com/in/maksim-didenko" target="_blank" rel="noopener">LinkedIn</a> · <a href="mailto:maksim.dnko@gmail.com">Email</a></p>
+                                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                                        <small class="text-muted">Advisory across:</small>
+                                        <img src="images/flag/Estonia.png" alt="Estonia" height="16">
+                                        <img src="images/flag/united-states.png" alt="United States" height="16">
+                                        <img src="images/flag/united-kingdom.png" alt="United Kingdom" height="16">
+                                        <img src="images/flag/european-union.png" alt="European Union" height="16">
+                                        <img src="images/flag/australia.png" alt="Australia" height="16">
+                                        <img src="images/flag/singapore.png" alt="Singapore" height="16">
+                                    </div>
+                                    <p class="copyright-text mb-0">Copyright &copy; <span class="js-current-year"></span> Maksim Didenko — Initial template: <a rel="sponsored" href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </footer>
+                </main>
+
+            </div>
+        </div>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/apexcharts.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>
